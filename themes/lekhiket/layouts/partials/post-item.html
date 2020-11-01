@@ -1,0 +1,18 @@
+<section class="list-item">
+	  {{ if .Title }}
+	<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
+	  {{ end }}
+	<a href="{{ .RelPermalink }}" style="border-bottom: 0px;"><time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time></a>
+	<p><div class="description">
+	  {{ if .Title }}
+		{{ if isset .Params "description" }}
+		{{ .Description }}
+		{{ else }}
+		{{ .Summary }}…
+		{{ end }}
+	</div></p>
+	<p><a href="{{ .RelPermalink }}">Read more ⟶</a></p>                      
+	  {{ else }}
+	  <p>{{ .Content }}</p>
+	  {{ end }}
+</section>

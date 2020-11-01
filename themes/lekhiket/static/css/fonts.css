@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Greycliff';
+  src: url('../fonts/GreycliffCF-Medium.woff2') format('woff2'),
+       url('../fonts/GreycliffCF-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Greycliff';
+  src: url('../fonts/GreycliffCF-MediumOblique.woff2') format('woff2'),
+       url('../fonts/GreycliffCF-MediumOblique.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Greycliff';
+  src: url('../fonts/GreycliffCF-ExtraBold.woff2') format('woff2'),
+       url('../fonts/GreycliffCF-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Greycliff';
+  src: url('../fonts/GreycliffCF-ExtraBoldOblique.woff2') format('woff2'),
+       url('../fonts/GreycliffCF-ExtraBoldOblique.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cartograph';
+  src: url('../fonts/CartographCF-Regular.woff2') format('woff2'),
+       url('../fonts/CartographCF-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cartograph';
+  src: url('../fonts/CartographCF-RegularItalic.woff2') format('woff2'),
+       url('../fonts/CartographCF-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cartograph';
+  src: url('../fonts/CartographCF-ExtraBold.woff2') format('woff2'),
+       url('../fonts/CartographCF-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cartograph';
+  src: url('../fonts/CartographCF-ExtraBoldItalic.woff2') format('woff2'),
+       url('../fonts/CartographCF-ExtraBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}

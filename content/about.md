@@ -18,7 +18,7 @@ You can view my work at [tnflnt.co/projects](https://tnflnt.co/projects).
 
 [notes.tnflnt.co](/) is my personal notebook. I'll share links, weekly recaps, articles, photos, whatever seems right.
 
-This site is built on Hugo and hosted by Netlify. It will probably change often; a website as a worry stone, to [borrow a phrase from Ethan Marcotte](https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/).
+This site is built on Hugo and hosted by Netlify. It will change often; a website as a worry stone, [to paraphrase Ethan Marcotte](https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/). The Hugo theme is fork of [Archie](https://github.com/athul/archie); you can check out the site repository [here](https://github.com/tnflnt/notes.tnflnt.co).
 
 Want to chat? Please feel free to [get in touch](mailto:hi@tnflnt.co). Alternatively, you can find me around the internet at *@tnflnt*.
 

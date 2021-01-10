@@ -14,18 +14,28 @@
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
-				<section class="list-item">
-					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
-					<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
-					<br><div class="description">
-						{{ if isset .Params "description" }}
-						{{ .Description }}
-						{{ else }}
-						{{ .Summary }}&hellip;
-						{{ end }}
-					</div>
-					<a href="{{ .RelPermalink }}">Read more ⟶</a>
-				</section>
+				<article class="list-item">
+					{{ if .Title }}
+						<div class="title">
+							{{ if (not (isset .Params "externalurl")) }}
+								<h1 class="title"><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h1>
+							{{ else }}
+								<h1 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank">{{ .Title }}</a></h1>
+							{{ end }}
+							
+						</div>
+						<section class="body">
+							{{ .Content }}
+						</section>
+						<div class="meta"><a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>
+					{{ else }}
+						<section class="body microblog">
+							{{ .Content }}
+						</section>
+						<div class="meta"><a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>
+					{{ end }}
+					<hr>
+				</article>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}
 			</main>

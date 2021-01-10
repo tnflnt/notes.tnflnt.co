@@ -1,28 +1,30 @@
-+++
-title = "About"
-description = "Hugo, the world’s fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us","about-hugo","contact"]
-author = "Hugo Authors"
-+++
+---
+title: "About"
+description: ""
+date: 2021-01-01T00:00:00+06:00
+---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+**Hi! I’m Tony. I build design systems and digital products.**
 
-Hugo makes use of a variety of open source projects including:
+Since 2019, I’ve been the Design Systems Manager at [Keller Williams](https://kw.com/), the world’s largest real estate brokerage, in Austin, TX. I lead system design and development for Command, our platform of agent business tools.
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+Previously, I was a Lead Product Designer at [Strava](https://strava.com/) in San Francisco, building applications for Strava’s community of over 50 million athletes around the world. I also helped establish a design systems team at Strava that launched the Strava brand and product design system, Spandex.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+I got my start in design at [Odopod](http://odopod.com/), a product and service design agency in San Francisco. As a visual designer, I helped build products for dozens of clients, including Eventbrite, Sony, Google, Samsung, and others.
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+You can view my work at [tnflnt.co/projects](https://tnflnt.co/projects).
 
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+## This Site
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+[notes.tnflnt.co](/) is my personal notebook. I'll share links, weekly recaps, articles, photos, whatever seems right.
 
+This site is built on Hugo and hosted by Netlify. It will probably change often; a website as a worry stone, to [borrow a phrase from Ethan Marcotte](https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/).
 
+Want to chat? Please feel free to [get in touch](mailto:hi@tnflnt.co). Alternatively, you can find me around the internet at *@tnflnt*.
 
+- [linkedin.com/in/tnflnt](https://www.linkedin.com/in/tnflnt/)
+- [github.com/tnflnt](https://github.com/tnflnt)
+- [figma.com/@tnflnt](https://www.figma.com/@tnflnt)
+- [dribbble.com/tnflnt](https://dribbble.com/tnflnt)
+
+✌🏻

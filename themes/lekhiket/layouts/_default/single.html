@@ -8,7 +8,6 @@
 			{{ else }}
 				<h1 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank">{{ .Title }}</a> ↗️</h1>
       		{{ end }}
-			<div class="meta">Posted on {{ dateFormat "Jan 2, 2006" .Date }} • <a class="permalink" title="Permanent link to {{ .Title }}" href="{{ .Permalink }}">🔗</a>{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>
 		</div>
 
 		<section class="body">
@@ -19,21 +18,23 @@
 			{{ .Content }}
 		</section>
 {{ end }}
-
-		<div class="post-tags">
-			{{ if ne .Type "page" }}
-			{{ if gt .Params.tags 0 }}
-			<nav class="nav tags">
-				<ul class="tags">
-					{{ range .Params.tags }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-					{{ end }}
-				</ul>
-			</nav>
+<div class="post-tags">
+	{{ if ne .Type "page" }}
+	{{ if gt .Params.tags 0 }}
+	<nav class="nav tags">
+		<ul class="tags">
+			{{ range .Params.tags }}
+			<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
 			{{ end }}
-			{{ end }}
-		</div>
+		</ul>
+	</nav>
+	{{ end }}
+	{{ end }}
+</div>		
+<div class="meta"><a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>	
+		
 	</article>
+	<hr>
 </main>
 {{ end }}
 

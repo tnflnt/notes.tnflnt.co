@@ -4,7 +4,7 @@ date: 2020-12-11T10:00:00-06:00
 draft: false
 description: "Bartosz Ciechanowski is back at it again with another extremely good illustrated blog post about how cameras and lenses work to gather light and make photos."
 externalurl: "https://ciechanow.ski/cameras-and-lenses/"
-tags: [links]
+tags: [links, photography]
 ---
 
 Bartosz Ciechanowski is back at it again with [another _extremely good_ illustrated blog post](https://ciechanow.ski/cameras-and-lenses/) about how cameras and lenses work to gather light and make photos. 

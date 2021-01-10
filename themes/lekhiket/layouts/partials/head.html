@@ -4,9 +4,9 @@
 	{{- $title := ( .Title ) -}}
 	{{- $siteTitle := ( .Site.Title ) -}}
 	{{- if .IsHome -}}
-	<title>{{ $siteTitle }} | Home </title>
+	<title>{{ $siteTitle }}</title>
 	{{- else -}}
-	<title>{{ $title }} - {{ $siteTitle }}</title>
+	<title>{{ $title }} — {{ $siteTitle }}</title>
 	{{- end -}}
 
 	<link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5f8b5cc81271f60e6bb9524a/1603813625767-5A8DSCJD7C5EWSIX7FM6/ke17ZwdGBToddI8pDm48kLYO53DNTWiogOKDMd2pXzNZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7dVqjJOA2bbs_Tozk7Nfgn76XL43JZOkPCEshooDSeRLTlrDit8BQyuAgSCshm0xaQ/favicon.ico?format=100w">

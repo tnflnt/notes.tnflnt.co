@@ -10,7 +10,7 @@
     color: #232333;
     font-family: 'Cartograph', monospace;
     font-size: 16px;
-    line-height: 1.5;
+    /* line-height: 1.6; */
   }
   body {
     display: block;
@@ -26,8 +26,8 @@
   }
   
   p, .description {
-    font-family: 'Greycliff', sans-serif;
-    font-size: 1.25rem;
+    /* font-family: 'Greycliff', sans-serif; */
+    /* font-size: 1.25rem; */
     line-height: 1.5;
   }
   

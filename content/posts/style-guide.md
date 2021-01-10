@@ -2,7 +2,7 @@
 title: "Style Guide"
 date: 2020-04-01T02:01:58+05:30
 description: "A style guide and testing post for tnflnt.co."
-tags: [Primer, todo]
+tags: []
 draft: true
 ---
 

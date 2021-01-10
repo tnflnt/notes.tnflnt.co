@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Notes"
+title = "notes.tnflnt.co"
 theme = "lekhiket"
 
 pygmentsstyle = "monokai"
@@ -34,7 +34,7 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "All Posts"
+name = "Posts"
 url = "/posts"
 weight = 2
 

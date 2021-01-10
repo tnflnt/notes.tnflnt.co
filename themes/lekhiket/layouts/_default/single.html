@@ -3,8 +3,12 @@
 	<article>
 {{ if .Title }}
 		<div class="title">
-			<h1 class="title">{{ .Title }}</h1>
-			<div class="meta">Posted on {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
+			{{ if (not (isset .Params "externalurl")) }}
+				<h1 class="title"><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h1>
+			{{ else }}
+				<h1 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank">{{ .Title }}</a> ↗️</h1>
+      		{{ end }}
+			<div class="meta">Posted on {{ dateFormat "Jan 2, 2006" .Date }} • <a class="permalink" title="Permanent link to {{ .Title }}" href="{{ .Permalink }}">🔗</a>{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>
 		</div>
 
 		<section class="body">

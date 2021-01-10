@@ -51,8 +51,12 @@
     font-weight: bold;
   }
   a:hover {
-      background-color: var(--hovercolor);
-      color: #fff;
+    background-color: var(--hovercolor);
+    color: #fff;
+  }
+
+.permalink {
+    border-bottom: none;
   }
   
   /* List Styling */

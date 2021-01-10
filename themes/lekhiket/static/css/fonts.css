@@ -1,63 +1,63 @@
 @font-face {
   font-family: 'Greycliff';
-  src:  url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6e75c64e7e57c6fcb8bd/1602973301857/GreycliffCF-Medium.woff2) format('woff2'),
-        url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6e6d7d41b757db3815a7/1602973293182/GreycliffCF-Medium.woff) format('woff');
+  src:  url('../fonts/GreycliffCF-Medium.woff2') format('woff2'),
+        url('../fonts/GreycliffCF-Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Greycliff';
-  src:  url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6e841caa0828250e3f43/1602973316173/GreycliffCF-MediumOblique.woff2) format('woff2'),
-        url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6e7b7d41b757db38164f/1602973307711/GreycliffCF-MediumOblique.woff) format('woff');
+  src:  url('../fonts/GreycliffCF-MediumOblique.woff2') format('woff2'),
+        url('../fonts/GreycliffCF-MediumOblique.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Greycliff';
-  src:  url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6c78ce7cf718b1eec6c7/1602972792794/GreycliffCF-Heavy.woff2) format('woff2'),
-        url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6c7243cae431e8859292/1602972787045/GreycliffCF-Heavy.woff) format('woff');
+  src:  url('../fonts/GreycliffCF-Bold.woff2') format('woff2'),
+        url('../fonts/GreycliffCF-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Greycliff';
-  src:  url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6c86474f532839e8ff0a/1602972806158/GreycliffCF-HeavyOblique.woff2) format('woff2'),
-        url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6c80e720c2779c523eeb/1602972800018/GreycliffCF-HeavyOblique.woff) format('woff');
+  src:  url('../fonts/GreycliffCF-BoldOblique.woff2') format('woff2'),
+        url('../fonts/GreycliffCF-BoldOblique.woff') format('woff');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Cartograph';
-  src:  url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6ca443cae431e88598ea/1602972836347/CartographCF-Regular.woff2) format('woff2'),
-        url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6c9e6dd4bd52698fd8cb/1602972830375/CartographCF-Regular.woff) format('woff');
+  src:  url('../fonts/CartographCF-Regular.woff2') format('woff2'),
+        url('../fonts/CartographCF-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cartograph';
-  src:  url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6cb0d83d21326c67de6e/1602972848174/CartographCF-RegularItalic.woff2) format('woff2'),
-        url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6caa2655914e23af68dd/1602972842132/CartographCF-RegularItalic.woff) format('woff');
+  src:  url('../fonts/CartographCF-RegularItalic.woff2') format('woff2'),
+        url('../fonts/CartographCF-RegularItalic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Cartograph';
-  src:  url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6cbd9ff1730d1162da1b/1602972862047/CartographCF-Heavy.woff2) format('woff2'),
-        url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6cb8b735da15b149a425/1602972856463/CartographCF-Heavy.woff) format('woff');
+  src:  url('../fonts/CartographCF-ExtraBold.woff2') format('woff2'),
+        url('../fonts/CartographCF-ExtraBold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cartograph';
-  src:  url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6cc943cae431e8859e51/1602972873408/CartographCF-HeavyItalic.woff2) format('woff2'),
-        url(https://static1.squarespace.com/static/5f8b5cc81271f60e6bb9524a/t/5f8b6cc343cae431e8859e36/1602972867969/CartographCF-HeavyItalic.woff) format('woff');
+  src:  url('../fonts/CartographCF-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/CartographCF-ExtraBoldItalic.woff2') format('woff');
   font-weight: bold;
   font-style: italic;
 }

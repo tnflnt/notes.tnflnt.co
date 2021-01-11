@@ -21,7 +21,8 @@
 /* Foundations */
 
 html {
-  font-family: 'Cartograph', monospace;
+  /* font-family: 'Cartograph', monospace; */
+  font-family: 'Greycliff', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -49,11 +50,11 @@ body {
 /* Typography */
 
 p {
-  font-family: 'Greycliff', sans-serif;
   line-height: 1.75;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cartograph', monospace;
   font-size: 1.5rem;
   margin-top: 2rem;
   font-style: italic;
@@ -107,15 +108,20 @@ hr {
 }
 
 blockquote {
+  font-family: 'Cartograph', monospace;
   border-left: 3px solid var(--dividerColorLT);
-  color: #737373;
+  color: var(--labelSecondaryLT);
   margin: 0;
   padding-left: 1em;
 }
 
 /* Lists */
 
-ul {
+ul, ol {
+  font-family: 'Greycliff', sans-serif;
+}
+
+/* ul {
   list-style: none;
   padding-left: 2ch;
 }
@@ -126,6 +132,10 @@ ul li::before {
   content: '* ';
   font-weight: bold;
   color: var(--actionColorLT);
+} */
+
+li {
+  margin: 0.25rem 0;
 }
 
 /* Images */
@@ -204,6 +214,7 @@ pre code {
 /* Header */
 
 header {
+  font-family: 'Cartograph', monospace;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -222,6 +233,7 @@ header a {
 /* Footer */
 
 footer {
+  font-family: 'Cartograph', monospace;
   margin: 3em 0;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -234,6 +246,7 @@ footer {
 }
 
 time {
+  font-family: 'Cartograph', monospace;
   color: var(--labelSecondaryLT);
 }
 
@@ -245,6 +258,7 @@ article .title {
 /* Meta */
 
 .meta {
+  font-family: 'Cartograph', monospace;
   text-transform: uppercase;
   color: var(--labelSecondaryLT);
   margin: 2rem 0;
@@ -261,6 +275,7 @@ justify-content: space-between;
   content: "🏷 ";
 }
 .tags a{
+  font-family: 'Cartograph', monospace;
   border-bottom: 3px solid var(--actionColorLT); 
 }
 .tags a:hover{
@@ -270,12 +285,13 @@ justify-content: space-between;
 
 
 .draft-label{ 
-    color: var(--dividerColorLT);
-    text-decoration: none;
-    padding: 2px 4px;
-    border-radius: 4px;
-    margin-left: 6px;
-    background-color: #f9f2f4;
+  font-family: 'Cartograph', monospace;
+  color: var(--labelSecondaryLT);
+  text-decoration: none;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-left: 6px;
+  background-color: var(--dividerColorLT);
 }
 
 /* Highlights */

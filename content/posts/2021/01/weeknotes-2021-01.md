@@ -1,8 +1,8 @@
 ---
 title: "Weeknotes, 2021.01"
 date: 2021-01-10T17:12:39-06:00
-draft: true
-description: ""
+draft: false
+description: "Hello, 2021! These are weeknotes: a weekly log of what happened in my life. Highlights, stray observations, things I listened to/read/watched/cooked, and a snapshot or two from the week. Let’s begin…"
 tags: [weeknotes]
 ---
 

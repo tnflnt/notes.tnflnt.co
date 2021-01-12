@@ -1,31 +1,37 @@
-/* Dark Theme Styles — only color declarations! */
-
 body {
-  color: var(--labelPrimaryDK);
-  background-color: var(--pageBackgroundDK);
+  color: white;
+  background-color: #202124;
 }
 
 ::-moz-selection {
-  background: var(--actionColorHoverDK);
-  color: var(--pageBackgroundDK);
+  background: blue;
+  color: #fff;
+  text-shadow: none;
 }
 
 ::selection {
-  background: var(--actionColorHoverDK);
-  color: var(--pageBackgroundDK);
+  background: red;
+  color: #fff;
+  text-shadow: none;
 }
 
 hr {
-  border-top-color: var(--dividerColorDK);
+  border-top: 3px dotted blue;
 }
-
-code, pre {
-  background-color: var(--dividerColorDK);
-  color: var(--labelPrimaryDK);
+code {
+  background-color: lightblue;
+  color: black;
+  text-decoration: bold;
+  padding: 0.1em 0.2em;
 }
-
+pre {
+  background-color: #272822;
+  line-height: 1.4;
+  overflow-x: auto;
+  padding: 1em;
+}
 blockquote {
-  border-color: var(--dividerColorDK);
+  border-color: blue;
 }
 
 h1,
@@ -34,39 +40,39 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--labelPrimaryDK);
+  color: #ddd;
 }
 h1::before {
-  color: var(--actionColorDK);
+  color: var(--darkMaincolor);
   content: "# ";
 }
 h2::before {
-  color: var(--actionColorDK);
+  color: var(--darkMaincolor);
   content: "## ";
 }
 h3::before {
-  color: var(--actionColorDK);
+  color: var(--darkMaincolor);
   content: "### ";
 }
 h4::before {
-  color: var(--actionColorDK);
+  color: var(--darkMaincolor);
   content: "#### ";
 }
 h5::before {
-  color: var(--actionColorDK);
+  color: var(--darkMaincolor);
   content: "##### ";
 }
 h6::before {
-  color: var(--actionColorDK);
+  color: var(--darkMaincolor);
   content: "###### ";
 }
 
 a {
-  border-bottom: 3px solid var(--actionColorDK);
+  border-bottom: 3px solid var(--darkMaincolor);
   color: inherit;
 }
 a:hover {
-  background-color: var(--actionColorDK);
+  background-color: var(--darkMaincolor);
   color: black;
 }
 
@@ -78,10 +84,10 @@ a:hover {
 }
 
 .tags a {
-  border-bottom: 3px solid var(--actionColorDK);
+  border-bottom: 3px solid var(--darkMaincolor);
 }
 .tags a:hover {
-  background-color: var(--actionColorDK);
+  background-color: var(--darkMaincolor);
   color: black;
 }
 
@@ -102,7 +108,7 @@ a:hover {
   color: black;
 }
 .draft-label {
-  color: var(--actionColorDK);
+  color: var(--darkMaincolor);
   background-color: blue;
 }
 .highlight pre code[class=language-javaScript]::before,

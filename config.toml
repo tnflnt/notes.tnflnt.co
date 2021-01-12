@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "notes.tnflnt.co"
+title = "tnflnt.co"
 theme = "lekhiket"
 
 pygmentsstyle = "monokai"
@@ -29,21 +29,39 @@ paginate = 10 # articles per page
 # Main menu Items
 
 [[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
 name = "Posts"
 url = "/posts"
-weight = 2
+weight = 1
 
 [[menu.main]]
 name = "About"
 url = "/about"
-weight = 3
+weight = 2
 
 [[menu.main]]
-name = "Tags"
-url = "/tags"
+name = "Work ↗"
+url = "https://tonyfolenta.com"
+weight = 3
+
+
+# Main menu Items
+
+[[menu.footer]]
+name = "Figma"
+url = "https://www.figma.com/@tnflnt"
+weight = 1
+
+[[menu.footer]]
+name = "Github"
+url = "https://github.com/tnflnt"
+weight = 2
+
+[[menu.footer]]
+name = "Dribbble"
+url = "https://dribbble.com/tnflnt"
+weight = 3
+
+[[menu.footer]]
+name = "hi@tnflnt.co 📬"
+url = "mailto:hi@tnflnt.co"
 weight = 4

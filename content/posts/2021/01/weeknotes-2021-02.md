@@ -3,7 +3,6 @@ title: "Weeknotes, 2021.02"
 date: 2021-01-17T10:24:00-06:00
 draft: false
 description: "Week 2! A snow day in Texas, another impeachment, a weekend in Houston, and once again, too much TV. 2020 Part II continues."
-externalurl: ""
 tags: [weeknotes]
 ---
 

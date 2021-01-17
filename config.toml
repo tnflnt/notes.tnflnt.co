@@ -9,22 +9,12 @@ pygmentscodefencesguesssyntax = true
 
 paginate = 10 # articles per page
 
-# Social Tags
-
-# [[params.social]]
-# name = "GitHub"
-# icon = "github"
-# url = "https://github.com/athul/archie"
-
-# [[params.social]]
-# name = "Twitter"
-# icon = "twitter"
-# url = "https://twitter.com/athulcajay/"
-
-# [[params.social]]
-# name = "GitLab"
-# icon = "gitlab"
-# url = "https://gitlab.com/athul/"
+[params]
+mode="light" # color-mode → light,dark or auto
+useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+description = "Hi! I'm Tony Folenta. I build design systems."
+images = ["img/tnflnt-cover.png"]
+title = "tnflnt.co"
 
 # Main menu Items
 

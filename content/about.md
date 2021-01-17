@@ -12,13 +12,7 @@ Previously, I was a Lead Product Designer at [Strava](https://strava.com/) in Sa
 
 I got my start in design at [Odopod](http://odopod.com/), a product and service design agency in San Francisco. As a visual designer, I helped build products for dozens of clients, including Eventbrite, Sony, Google, Samsung, and others.
 
-You can view my work at [tnflnt.co/projects](https://tnflnt.co/projects).
-
-## This Site
-
-[notes.tnflnt.co](/) is my personal notebook. I'll share links, weekly recaps, articles, photos, whatever seems right.
-
-This site is built on Hugo and hosted by Netlify. It will change often; a website as a worry stone, [to paraphrase Ethan Marcotte](https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/). The Hugo theme is fork of [Archie](https://github.com/athul/archie); you can check out the site repository [here](https://github.com/tnflnt/notes.tnflnt.co).
+You can view my work at [tonyfolenta.com](https://tonyfolenta.com).
 
 Want to chat? Please feel free to [get in touch](mailto:hi@tnflnt.co). Alternatively, you can find me around the internet at *@tnflnt*.
 
@@ -26,5 +20,17 @@ Want to chat? Please feel free to [get in touch](mailto:hi@tnflnt.co). Alternati
 - [github.com/tnflnt](https://github.com/tnflnt)
 - [figma.com/@tnflnt](https://www.figma.com/@tnflnt)
 - [dribbble.com/tnflnt](https://dribbble.com/tnflnt)
+
+## To Do
+
+[tnflnt.co](/) is my personal notebook. I'll share links, weeknotes, articles, photos, whatever seems right.
+
+This site is built on Hugo and hosted by Netlify. It will change often; a website as a worry stone, [to paraphrase Ethan Marcotte](https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/). The Hugo theme is fork of [Archie](https://github.com/athul/archie); you can check out the site repository [here](https://github.com/tnflnt/notes.tnflnt.co).
+
+Here's an incomplete list of things I still need to do:
+
+- Properly configure OpenGraph/Twitter/metadata for pages and posts.
+- Finish cleaning up the dark mode theme.
+- Add "reply by email" to Post template.
 
 ✌🏻

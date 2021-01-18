@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://tnflnt.co/"
 languageCode = "en-us"
 title = "tnflnt.co"
 theme = "lekhiket"

@@ -1,11 +1,10 @@
 ---
 title: "Robin Rendle on Newsletters"
 date: 2021-01-19T12:30:17-06:00
-draft: true
-description: ""
-images: [""]
+draft: false
+description: "Thoughts around newsletters and writing for the web, from Robin Rendle and Craig Mod."
+images: ["img/20210119-playing-flute.jpg"]
 externalurl: "https://www.robinrendle.com/essays/newsletters"
-tags: [tag1, tag2]
 ---
 
 A tweet from Craig Mod caught my eye this morning… 

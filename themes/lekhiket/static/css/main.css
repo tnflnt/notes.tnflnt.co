@@ -123,6 +123,11 @@ a:active {
   border-bottom: none;
 }
 
+.link-out {
+  font-family: var(--monoFont);
+  color: var(--actionColorLT);
+}
+
 /* Containers */
 
 .content {

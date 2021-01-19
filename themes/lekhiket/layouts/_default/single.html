@@ -6,7 +6,7 @@
 			{{ if (not (isset .Params "externalurl")) }}
 				<h1 class="title"><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h1>
 			{{ else }}
-				<h1 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank">{{ .Title }}</a> ↗️</h1>
+				<h1 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank">{{ .Title }}</a><span class="link-out"> &nearr;</span></h1>
       		{{ end }}
 		</div>
 

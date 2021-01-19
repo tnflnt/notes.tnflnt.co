@@ -144,10 +144,16 @@ hr {
 
 blockquote {
   font-family: var(--monoFont);
-  border-left: 3px solid var(--dividerColorLT);
+  font-style: italic;
+  /* font-size: 0.75rem; */
+  border-left: 4px solid var(--dividerColorLT);
   color: var(--labelSecondaryLT);
-  margin: 0;
-  padding-left: 1em;
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+}
+
+blockquote em {
+  font-style: normal;
 }
 
 /* Lists */
@@ -169,9 +175,9 @@ figure {
   max-width: 100%;
 }
 
-figure img {
+/* figure img {
   max-height: 500px;
-}
+} */
 
 @media screen and (min-width: 600px) {
   figure {
@@ -184,8 +190,16 @@ figure h4 {
   margin: 0;
   margin-bottom: 1em;
 }
+
 figure h4::before {
   content: '↳ ';
+}
+
+figure figcaption {
+  font-family: var(--monoFont);
+  font-style: italic;
+  font-size: 0.75rem;
+  text-align: center;
 }
 
 /* Code */
@@ -298,4 +312,13 @@ justify-content: space-between;
   border-radius: 4px;
   margin-left: 6px;
   background-color: var(--dividerColorLT);
+}
+
+/* Tweets */
+
+.twitter-tweet {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
 }

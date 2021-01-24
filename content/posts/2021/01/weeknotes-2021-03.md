@@ -36,7 +36,8 @@ Forty-six.
 
 ## Listening
 - [*Summer Vibes*](https://music.apple.com/us/playlist/summer-vibes/pl.6cbec98d25194addb2b012e681e0eff6) on Apple Music. 
-- Marathoning Mad Men, I now see how perfectly they’ve paired music to the scenes. Highlight of season 6 — Nancy Sinatra’s [“You Only Live Twice”](https://www.youtube.com/watch?v=RTiDKcFGpCQ). I never knew the opening bars of [“Millennium”](https://www.youtube.com/watch?v=xcWOviMI6Lk) by Robbie Williams were a cover.
+- A *Mad Men* marathon comes with a renewed appreciation for the music of the 60’s. Highlight of season 6 — Nancy Sinatra’s [“You Only Live Twice”](https://www.youtube.com/watch?v=RTiDKcFGpCQ). (Bonus cover: [“Millennium”](https://www.youtube.com/watch?v=xcWOviMI6Lk) by Robbie Williams.)
+
 
 Week three, in the books. It’s been gray and rainy here in Austin, so we stay inside and eat tacos.
 

@@ -26,7 +26,7 @@
 html, body {
   font-size: 16px;
   font-family: var(--sansFont);
-  line-height: 1.5;
+  line-height: 1.6;
   color: var(--labelPrimaryLT);
 }
 
@@ -150,7 +150,7 @@ hr {
 blockquote {
   font-family: var(--monoFont);
   font-style: italic;
-  /* font-size: 0.75rem; */
+  font-size: 0.75rem;
   border-left: 4px solid var(--dividerColorLT);
   color: var(--labelSecondaryLT);
   margin: 2rem 0;

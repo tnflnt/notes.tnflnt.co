@@ -234,7 +234,7 @@ pre code {
 
 /* Header & Footer */
 
-header, footer {
+header, footer, .pagination {
   font-family: var(--monoFont);
   display: flex;
   flex-wrap: wrap;
@@ -258,6 +258,7 @@ header a, footer a {
   padding: 0.125rem 0.25rem;
   border-radius: 2px;
 }
+
 
 /* Common */
 .title h1 {

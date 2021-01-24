@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "tnflnt.co"
 theme = "lekhiket"
 
-paginate = 3 # articles per page
+paginate = 10 # articles per page
 
 [params]
 mode="light" # color-mode → light,dark or auto

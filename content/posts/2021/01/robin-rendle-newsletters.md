@@ -9,7 +9,9 @@ externalurl: "https://www.robinrendle.com/essays/newsletters"
 
 A tweet from Craig Mod caught my eye this morning… 
 
-{{< tweet 1351497802199699456 >}} 
+> Newsletters also work because — voice. Blogging sometimes feels like writing letters, but not implicitly. People sound natural and voicey when they write letters, and newsletters trick them into doing just that, because that’s what email is (sort of) for.
+> 
+> via [@craigmod](https://twitter.com/craigmod/)
 
 …with a link to [this new essay from Robin Rendle](https://www.robinrendle.com/essays/newsletters): a collection of thoughts around newsletters, a writer’s voice, RSS, monetization, ease of access, and how the whole writing-on-the-web thing fits together.
 

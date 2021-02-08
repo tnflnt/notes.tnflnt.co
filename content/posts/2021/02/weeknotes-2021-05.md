@@ -1,6 +1,6 @@
 ---
 title: "Weeknotes, 2021.05"
-date: 2021-02-08T13:48:14-06:00
+date: 2021-02-07T12:00:00-06:00
 draft: false
 description: "A bit more sunlight, a weekend in Houston, and Zillow. It’s week five."
 images: ["/img/20210204-dale-car-ride.jpg"]

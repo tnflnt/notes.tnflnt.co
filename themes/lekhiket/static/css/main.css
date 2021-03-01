@@ -19,6 +19,7 @@
 
   --monoFont: 'Cartograph', monospace;
   --sansFont: 'Greycliff', sans-serif;
+  --systemFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /* Foundations */
@@ -28,6 +29,7 @@ html, body {
   font-family: var(--sansFont);
   line-height: 1.6;
   color: var(--labelPrimaryLT);
+  /* letter-spacing: -0.02em; */
 }
 
 @media screen and (min-width: 480px) {

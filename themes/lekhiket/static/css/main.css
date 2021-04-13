@@ -182,9 +182,9 @@ figure {
   max-width: 100%;
 }
 
-/* figure img {
-  max-height: 500px;
-} */
+figure a {
+  border-bottom: none;
+}
 
 @media screen and (min-width: 600px) {
   figure {
@@ -320,6 +320,30 @@ justify-content: space-between;
   border-radius: 4px;
   margin-left: 6px;
   background-color: var(--dividerColorLT);
+}
+
+/* Case Study Styles */
+
+.work-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.work-year {
+  font-family: var(--monoFont);
+  letter-spacing: 0.1em;
+  color: var(--labelSecondaryLT);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.work-meta {
+  font-family: var(--monoFont);
+  letter-spacing: 0.1em;
+  color: var(--labelSecondaryLT);
+  font-size: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Tweets */

@@ -4,6 +4,7 @@
         url('../fonts/GreycliffCF-Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
         url('../fonts/GreycliffCF-MediumOblique.woff') format('woff');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
         url('../fonts/GreycliffCF-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
         url('../fonts/GreycliffCF-BoldOblique.woff') format('woff');
   font-weight: bold;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -36,6 +40,7 @@
         url('../fonts/CartographCF-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -44,6 +49,7 @@
         url('../fonts/CartographCF-RegularItalic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -52,6 +58,7 @@
         url('../fonts/CartographCF-ExtraBold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -60,36 +67,5 @@
         url('../fonts/CartographCF-ExtraBoldItalic.woff2') format('woff');
   font-weight: bold;
   font-style: italic;
-}
-
-@font-face {
-  font-family: 'Artifex';
-  src:  url('../fonts/ArtifexHandCF-Book.woff2') format('woff2'),
-        url('../fonts/ArtifexHandCF-Book.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Artifex';
-  src:  url('../fonts/ArtifexHandCF-BookItalic.woff2') format('woff2'),
-        url('../fonts/ArtifexHandCF-BookItalic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Artifex';
-  src:  url('../fonts/ArtifexHandCF-ExtraBold.woff2') format('woff2'),
-        url('../fonts/ArtifexHandCF-ExtraBold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Artifex';
-  src:  url('../fonts/ArtifexHandCF-ExtraBoldItalic.woff2') format('woff2'),
-        url('../fonts/ArtifexHandCF-ExtraBoldItalic.woff2') format('woff');
-  font-weight: bold;
-  font-style: italic;
+  font-display: swap;
 }

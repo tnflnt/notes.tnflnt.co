@@ -9,7 +9,8 @@ tags: [weeknotes]
 
 Seasonal depression, brought to you by a pandemic.
 
-{{< tweet 1354893722174054406 >}}
+> **pandemic fine** — *noun* — a state of being in which you are employed and healthy during a pandemic but you're also tired and depressed and feel like trash all the time
+> — [@sarahesmith23](https://twitter.com/sarahesmith23/status/1354893722174054406)
 
 ## Highlights
 - Finally got around to doing a bit of work on the other side project. I should ask my secret partner if he’s cool with me writing about it.

@@ -3,7 +3,7 @@
 	<article>
 		<img src="{{ .Params.cover }}" />
 		<div class="title">
-			<h1 class="work-title"><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h1>
+			<h1 class="work-title">{{ .Title }}</h1>
 			<h3 class="work-year">{{ .Params.year }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</h3>
 			<h4 class="work-meta">{{ .Params.timeline }} • {{ .Params.role }}</h4>
 		</div>

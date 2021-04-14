@@ -5,6 +5,7 @@ date: {{ .Date }}
 draft: true
 description: ""
 images: [""]
+cover: ""
 year: "2016"
 timeline: "4 months"
 role: "Lead Product Designer, Core Experience Team"

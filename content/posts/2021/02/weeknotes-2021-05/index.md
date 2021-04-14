@@ -17,8 +17,10 @@ A bit more sunlight, a weekend in Houston, and Zillow. It’s week five.
 
 ## Reading
 - [Dave Rupert’s monthly “vibe check”](https://daverupert.com/2021/02/vibe-check-1/), a lower-stress sort of new year’s resolution.
-- [Michael Harriot tells his story of visiting a Charleston plantation.](https://www.americanway.com/articles/what-happens-when-the-descendant-of-an-enslaved-person-tours-charleston-plantations/) It’s a beautiful piece. A snippet:
+- [Michael Harriot tells his story of visiting a Charleston plantation.](https://www.americanway.com/articles/what-happens-when-the-descendant-of-an-enslaved-person-tours-charleston-plantations/) It’s a beautiful piece. A snippet: 
+
 > “Charleston still thrives on the sweat-stained history of slavery that, for centuries, has been treated as if it wasn’t a primary reason for this city’s existence. The plantation tourism industry has created an impressionist painting of this town’s history—all color, no shadows. Perhaps that is why it took more tragedy to un-whitewash this canvas and begin the process of telling the city’s history honestly. But I must admit—it really is gorgeous.”
+
 - [Sara Soueidan, “Just write.”](https://www.sarasoueidan.com/desk/just-write/)
 - [“The Pandemic Is Heading Toward a Strange In-Between Time”](https://www.theatlantic.com/health/archive/2021/02/will-there-be-another-surge-spring-mystery/617900/) by Robinson Meyer for The Atlantic.
 - [“The Primary Scream”](https://www.nytimes.com/interactive/2021/02/04/parenting/working-moms-coronavirus.html), mothers in crisis, from The New York Times.

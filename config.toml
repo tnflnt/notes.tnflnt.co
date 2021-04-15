@@ -6,7 +6,6 @@ theme = "lekhiket"
 paginate = 5 # articles per page
 
 [params]
-mode="light" # color-mode → light,dark or auto
 useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 description = "Hi! I'm Tony Folenta. I build design systems for digital products."
 images = ["img/tnflnt-cover.png"]

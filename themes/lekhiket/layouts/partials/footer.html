@@ -1,10 +1,11 @@
+<hr />
 <footer>
       <div class="main">
             &copy; {{ now.Format "2006"}} Tony Folenta
       </div>
       <nav>
             {{ range .Site.Menus.footer }}
-            <a href="{{ .URL }}">{{ .Name }}</a>
+            <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
             {{ end }}
       </nav>
 </footer>

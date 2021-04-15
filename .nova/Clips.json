@@ -1,0 +1,24 @@
+{
+  "clips" : [
+    {
+      "content" : "{{< figure class=\"\" figcaption=\"\" >}}\n{{< imglink href=\"$0\" >}}\n{{< img src=\"$0\" alt=\"\" >}}\n{{< \/imglink >}}\n{{< \/figure >}}",
+      "name" : "Figure with Image Link",
+      "trigger" : "figlink"
+    },
+    {
+      "content" : "{{< imglink href=\"$0\" >}}\n{{< img src=\"$0\" alt=\"\" >}}\n{{< \/imglink >}}",
+      "name" : "Image Link",
+      "trigger" : "imglink"
+    },
+    {
+      "content" : "{{< figure class=\"\" figcaption=\"\" >}}\n{{< img src=\"$0\" alt=\"\" >}}\n{{< \/figure >}}",
+      "name" : "Figure with Image",
+      "trigger" : "fig"
+    },
+    {
+      "content" : "{{< img src=\"$0\" alt=\"\" >}}",
+      "name" : "Image",
+      "trigger" : "img"
+    }
+  ]
+}

@@ -6,13 +6,7 @@ draft: true
 description: ""
 images: [""]
 cover: ""
-year: "2016"
-timeline: "4 months"
-role: "Lead Product Designer, Core Experience Team"
+year: ""
+timeline: ""
+role: ""
 ---
-
-{{< figure class="" figcaption="" >}}
-  {{< imglink href="IMAGEFILENAME" >}}
-	{{< img src="IMAGEFILENAME" alt="" >}}
-  {{< /imglink >}}
-{{< /figure >}}

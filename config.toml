@@ -11,7 +11,7 @@ description = "Hi! I'm Tony Folenta. I build design systems for digital products
 images = ["img/tnflnt-cover.png"]
 title = "tnflnt.co"
 
-# Main menu Items
+# Main Menu Items
 
 [[menu.main]]
 name = "Posts"
@@ -19,29 +19,19 @@ url = "/posts"
 weight = 1
 
 [[menu.main]]
-name = "About"
-url = "/about"
-weight = 2
-
-[[menu.main]]
 name = "Work ↗"
 url = "https://tonyfolenta.com"
-weight = 3
+weight = 2
 
 
-# Main menu Items
+# Footer Menu Items
 
-# [[menu.footer]]
-# name = "Figma"
-# url = "https://www.figma.com/@tnflnt"
-# weight = 1
-
-# [[menu.footer]]
-# name = "Github"
-# url = "https://github.com/tnflnt"
-# weight = 2
+[[menu.footer]]
+name = "About"
+url = "/about"
+weight = 1
 
 [[menu.footer]]
 name = "hi@tnflnt.co 📬"
 url = "mailto:hi@tnflnt.co"
-weight = 3
+weight = 2

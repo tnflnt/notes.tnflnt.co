@@ -1,7 +1,6 @@
 {{ define "main" }}
 <main>
 	<article>
-		<img src="{{ .Params.cover }}" />
 		<div class="title">
 			<h1 class="work-title">{{ .Title }}</h1>
 			<h3 class="work-year">{{ .Params.year }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</h3>

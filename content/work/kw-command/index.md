@@ -2,7 +2,7 @@
 title: "Command by Keller Williams"
 layout: "case-study"
 date: 2021-04-01T12:00:00-05:00
-draft: true
+draft: false
 description: ""
 images: ["tnflnt-command-01.jpg"]
 cover: "tnflnt-command-01.jpg"

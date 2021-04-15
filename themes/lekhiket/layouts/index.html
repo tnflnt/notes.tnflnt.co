@@ -15,8 +15,8 @@
 							{{ if (not (isset .Params "externalurl")) }}
 								<h1 class="title"><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h1>
 							{{ else }}
-								<h1 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank">{{ .Title }}</a><span class="link-out"> &nearr;</span></h1>
-								{{ end }}
+								<h1 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank" class="link-out">{{ .Title }}</a></h1>
+							{{ end }}
 						</div>
 						<section class="body">
 							{{ .Content }}

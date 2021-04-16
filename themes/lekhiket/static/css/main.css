@@ -1,6 +1,15 @@
 /* Theme Variables */
 
 :root{
+  
+  /* Fonts */
+  
+  --monoFont: 'Cartograph CF', 'Cartograph', monospace;
+  --sansFont: 'Greycliff CF', 'Greycliff', sans-serif;
+  --systemFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  
+  /* Light Theme */
+  
   --pageBackground: #FFFFFF;
   --labelPrimary: #000000;
   --labelSecondary: #000000;
@@ -10,14 +19,14 @@
   --actionColorActive:#7550FF;
   --actionColorFocus: rgba(80, 37, 238, 0.6);
   --dividerColor: #EEEEEE;
-
-  --monoFont: 'Cartograph', monospace;
-  --sansFont: 'Greycliff', sans-serif;
-  --systemFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  
 }
 
 @media (prefers-color-scheme: dark) {
   :root{  
+    
+    /* Dark Theme */
+    
     --pageBackground: #111111;
     --labelPrimary: #FFFFFF;
     --labelSecondary: #CCCCCC;
@@ -27,6 +36,7 @@
     --actionColorActive: #E300E3;
     --actionColorFocus: rgba(255, 80, 255, 0.6);
     --dividerColor: #333333;
+    
   }
 }
 
@@ -67,30 +77,38 @@ p {
   line-height: 1.75;
 }
 
+.intro {
+  font-size: 1.4rem;
+}
+
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 h5 {
   font-family: var(--monoFont);
+  letter-spacing: 0.1em;
   font-size: 1rem;
+  text-transform: uppercase;
 }
 
 h6 {
   font-family: var(--monoFont);
+  letter-spacing: 0.1em;
   font-size: 1rem;
+  text-transform: uppercase;
   font-style: italic;
 }
 
@@ -129,7 +147,7 @@ a:focus {
 
 /* Component Link Styles */
 
-.title a, a.nav-link {
+a.nav-link {
   color: var(--labelPrimary);
   border-bottom: none;
 }
@@ -138,7 +156,7 @@ a.permalink {
   border-bottom: none;
 }
 
-.link-out::after {
+a.link-out::after {
   content: " ↗";
   font-family: var(--monoFont);
 }
@@ -265,22 +283,6 @@ header a, footer a {
   border-radius: 2px;
 }
 
-
-/* Common */
-.title h1 {
-  margin-bottom: 0;
-}
-
-time {
-  font-family: var(--monoFont);
-  color: var(--labelTertiary);
-}
-
-/* Posts */
-/* article .title {
-  margin-bottom: 1em;
-}   */
-
 /* Meta */
 
 .meta {
@@ -289,7 +291,17 @@ time {
   font-size: 0.75rem;
   text-transform: uppercase;
   color: var(--labelTertiary);
-  margin: 2rem 0;
+}
+
+.draft-label { 
+  font-family: var(--monoFont);
+  letter-spacing: 0.1em;
+  color: var(--labelTertiary);
+  text-decoration: none;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-left: 6px;
+  background-color: var(--dividerColor);
 }
 
 .site-description {
@@ -315,16 +327,7 @@ justify-content: space-between;
   text-transform: uppercase;
 }
 
-.draft-label{ 
-  font-family: var(--monoFont);
-  letter-spacing: 0.1em;
-  color: var(--labelTertiary);
-  text-decoration: none;
-  padding: 2px 4px;
-  border-radius: 4px;
-  margin-left: 6px;
-  background-color: var(--dividerColor);
-}
+
 
 /* Case Study Styles */
 

@@ -2,20 +2,26 @@
 {{ if isset .Data "Term" }}
 <h1>{{ .Data.Term }}</h1>
 {{ else }}
-<h1 class="page-title">All Posts</h1>
 {{ end }}
-
-<ul class="posts">
-	{{- range .Data.Pages -}}
-		{{- if (not (in (.Site.Params.excludedTypes | default (slice "page")) .Type)) -}}
-		<li class="post">
-          {{ if .Title }}
-			<a href="{{ .RelPermalink }}">{{.Title}}</a><span class="meta"> • {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</span>
-          {{ else }}
-			<a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a>
-          {{ end }}
-		</li>
-		{{- end -}}
-	{{- end -}}
-</ul>
+{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+{{ range $paginator.Pages }}
+<article class="list-item">
+	<div class="title">
+		{{ if (not (isset .Params "externalurl")) }}
+			<h1 class="title"><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h1>
+		{{ else }}
+			<h1 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank" class="link-out">{{ .Title }}</a></h1>
+		{{ end }}
+	</div>
+	<div class="meta">
+		{{ if .Draft }}<span class="draft-label">DRAFT</span> • {{ end }}<a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}
+	</div>
+	<section class="body">
+		{{ .Content }}
+	</section>
+	<hr />
+</article>
+{{ end }}
+{{ template "partials/paginator.html" . }}
 {{ end }}

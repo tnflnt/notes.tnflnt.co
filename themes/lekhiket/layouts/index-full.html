@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	{{ partial "head.html" . }}
+	<body>
+		<div class="content">
+			{{ partial "header.html" . }}
+			
+			<main class="list">
+				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+				{{ range $paginator.Pages }}
+				<article class="list-item">
+					{{ if .Title }}
+						<div class="title">
+							{{ if (not (isset .Params "externalurl")) }}
+								<h1 class="title"><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h1>
+							{{ else }}
+								<h1 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank" class="link-out">{{ .Title }}</a></h1>
+							{{ end }}
+						</div>
+						<section class="body">
+							{{ .Content }}
+						</section>
+						<div class="meta"><a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>
+					{{ else }}
+						<section class="body microblog">
+							{{ .Content }}
+						</section>
+						<div class="meta"><a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>
+					{{ end }}
+					<hr>
+				</article>
+				{{ end }}
+				{{ template "partials/paginator.html" . }}
+			</main>
+			{{ partial "footer.html" . }}
+		</div>
+		
+	</body>
+</html>

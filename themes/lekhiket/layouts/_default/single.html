@@ -1,7 +1,6 @@
 {{ define "main" }}
 <main>
 	<article>
-{{ if .Title }}
 		<div class="title">
 			{{ if (not (isset .Params "externalurl")) }}
 				<h1 class="title"><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h1>
@@ -9,30 +8,27 @@
 				<h1 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank" class="link-out">{{ .Title }}</a></h1>
 			{{ end }}
 		</div>
-
+		<div class="meta">
+			{{ if .Draft }}<span class="draft-label">DRAFT</span> • {{ end }}<a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}
+		</div>
 		<section class="body">
 			{{ .Content }}
 		</section>
-{{ else }}
-		<section class="body microblog">
-			{{ .Content }}
-		</section>
-{{ end }}
-<div class="post-tags">
-	{{ if ne .Type "page" }}
-	{{ if gt .Params.tags 0 }}
-	<nav class="nav tags">
-		<ul class="tags">
-			{{ range .Params.tags }}
-			<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+		<div class="post-tags">
+			{{ if ne .Type "page" }}
+			{{ if gt .Params.tags 0 }}
+			<hr />
+			<h5>Categories</h5>
+			<nav class="nav tags">
+				<ul class="tags">
+					{{ range .Params.tags }}
+					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+					{{ end }}
+				</ul>
+			</nav>
 			{{ end }}
-		</ul>
-	</nav>
-	{{ end }}
-	{{ end }}
-</div>		
-<div class="meta"><a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }} • <a href="mailto:hi@tnflnt.co">Reply By Email 📬</a>{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>	
-		
+			{{ end }}
+		</div>		
 	</article>
 </main>
 {{ end }}

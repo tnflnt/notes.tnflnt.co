@@ -1,17 +1,14 @@
 {{ define "main" }}
 <main>
-	<article>
-		<div class="title">
-			<h1 class="work-title">{{ .Title }}</h1>
-			<h3 class="work-year">{{ .Params.year }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</h3>
-			<h4 class="work-meta">{{ .Params.timeline }} • {{ .Params.role }}</h4>
-		</div>
-		<hr />
-		<section class="body">
-			{{ .Content }}
-		</section>	
-	</article>
-	<hr>
+	<div class="title">
+		<h1 class="work-title">{{ .Title }}</h1>
+		<h3 class="work-year">{{ .Params.year }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</h3>
+		<h4 class="work-meta">{{ .Params.timeline }} • {{ .Params.role }}</h4>
+	</div>
+	<hr />
+	<section class="body">
+		{{ .Content }}
+	</section>	
 </main>
 {{ end }}
 

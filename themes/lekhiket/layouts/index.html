@@ -4,35 +4,39 @@
 	<body>
 		<div class="content">
 			{{ partial "header.html" . }}
-			
-			<main class="list">
+			<section>
+				<h1>Hi! I'm Tony. I build design systems.</h1>
+				<p class="intro">I lead the design system development team at <a href="https://technology.kw.com" target="_blank">Keller Williams</a>, the world’s largest real estate brokerage. Previously, I was a lead product and design systems designer at <a href="https://strava.com" target="_blank">Strava</a>, and a visual designer for <a href="http://odopod.com" target="_blank">Odopod</a>.</p>
+				<p class="intro"><a href="/">tnflnt.co</a> is my personal notebook/oft-neglected hobby. While you’re stopping by, here’s a bit more <a href="/about">about me</a>.</p> 
+				<p class="intro">Want to chat? <a href="mailto:hi@tnflnt.co">Say hi</a>.</p>
+				<hr />
+			</section>
+			<section class="list">
+				<h5>Recent Posts</h5>
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
 				<article class="list-item">
-					{{ if .Title }}
-						<div class="title">
-							{{ if (not (isset .Params "externalurl")) }}
-								<h1 class="title"><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h1>
-							{{ else }}
-								<h1 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank" class="link-out">{{ .Title }}</a></h1>
-							{{ end }}
-						</div>
-						<section class="body">
-							{{ .Content }}
-						</section>
-						<div class="meta"><a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>
+					{{ if (not (isset .Params "externalurl")) }}
+					<h2 class="title"><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h2>
 					{{ else }}
-						<section class="body microblog">
-							{{ .Content }}
-						</section>
-						<div class="meta"><a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>
+					<h2 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank" class="link-out">{{ .Title }}</a></h2>
 					{{ end }}
-					<hr>
+					{{ if isset .Params "description" }}
+					<p>{{ .Description }}</p>
+					{{ else }}
+					<p>{{ .Summary }}&hellip;</p>
+					{{ end }}
+					<p class="meta">{{ if .Draft }}<span class="draft-label">DRAFT</span> • {{ end }}{{ dateFormat "Jan 2, 2006" .Date }} • <a href="{{ .RelPermalink }}" class="more-link">Read more &rarr;</a></p>
+					<hr />
 				</article>
 				{{ end }}
-				{{ template "partials/paginator.html" . }}
-			</main>
+				<nav class="pagination">
+					<span class="page-item page-next">
+					<a href="/posts" class="page-link">All Posts &rarr;</a>
+					</span>
+				</nav>
+			</section>
 			{{ partial "footer.html" . }}
 		</div>
 		

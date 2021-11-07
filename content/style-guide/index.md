@@ -76,3 +76,11 @@ Ordered list
 1.	Red
 2.  Green
 3.  Blue
+
+## Images
+
+{{< figure class="" figcaption="This is fine." >}}
+{{< imglink href="this-is-fine.jpg" >}}
+{{< img src="this-is-fine.jpg" alt="A dog, surrounded by plants, saying 'this is fine'." >}}
+{{< /imglink >}}
+{{< /figure >}}

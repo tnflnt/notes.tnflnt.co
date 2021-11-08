@@ -3,7 +3,7 @@ title: "Command by Keller Williams"
 layout: "case-study"
 date: 2021-04-01T12:00:00-05:00
 draft: false
-description: ""
+description: "A redesign of the marketing, campaign management, and design tools for Command, a suite of CRM and sales tools for Keller Williams agents."
 images: ["tnflnt-command-01.jpg"]
 cover: "tnflnt-command-01.jpg"
 year: "2016"

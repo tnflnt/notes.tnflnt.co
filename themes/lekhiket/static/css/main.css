@@ -48,13 +48,25 @@ html, body {
   line-height: 1.6;
   color: var(--labelSecondary);
   background-color: var(--pageBackground);
-  /* letter-spacing: -0.02em; */
+  height: 100%;
 }
 
 @media screen and (min-width: 480px) {
   html, body {
     font-size: 20px;
   }
+}
+
+.home-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-icon {
+  margin-top: 4rem;
+  fill: var(--actionColor);
 }
 
 /* Selections */
@@ -274,6 +286,12 @@ header {
 
 footer {
   font-size: 0.75rem;
+  padding-bottom: 1rem;
+}
+
+header nav, footer nav {
+  display: flex;
+  gap: 0.5rem;
 }
 
 header a, footer a {

@@ -1,27 +1,24 @@
 {{ define "main" }}
-{{ if isset .Data "Term" }}
-<h1>{{ .Data.Term }}</h1>
-{{ else }}
-{{ end }}
-{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
-{{ range $paginator.Pages }}
-<article class="list-item">
-	<div class="title">
+	{{ if isset .Data "Term" }}
+	<h1>Entries tagged - "{{ .Data.Term }}"</h1>
+	{{ else }}
+	<h1 class="page-title">{{ .Title }}</h1>
+	{{ end }}
+	<p class="intro">{{ .Description }}</p>
+	<hr />
+	{{ range .Data.Pages }}
+	<section class="list-item">
 		{{ if (not (isset .Params "externalurl")) }}
-			<h1 class="title"><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h1>
+		<h3 class="title"><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h3>
 		{{ else }}
-			<h1 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank" class="link-out">{{ .Title }}</a></h1>
+		<h3 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank" class="link-out">{{ .Title }}</a></h3>
 		{{ end }}
-	</div>
-	<div class="meta">
+		<p>{{ .Description }}</p>
+		<p><a title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">Read More →</a></p>
+		<div class="meta">
 		{{ if .Draft }}<span class="draft-label">DRAFT</span> • {{ end }}<a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}
-	</div>
-	<section class="body">
-		{{ .Content }}
+		</div>
 	</section>
 	<hr />
-</article>
-{{ end }}
-{{ template "partials/paginator.html" . }}
+	{{ end }}
 {{ end }}

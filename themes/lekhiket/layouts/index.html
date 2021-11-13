@@ -3,22 +3,10 @@
 	{{ partial "head.html" . }}
 	<body>
 		<div class="content home-content">
-			<!-- {{ partial "header.html" . }} -->
-			<!-- <a href="{{ .Site.BaseURL }}" class="nav-link"> -->
-				<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
-					<title>{{ .Site.Title }}</title>
-					<path d="M3.00083 40C2.25745 40 1.77395 39.2177 2.10641 38.5528L8.93559 24.8944C9.21711 24.3314 9.21711 23.6686 8.93559 23.1056L2.10641 9.44721C1.77395 8.78231 2.25745 8 3.00083 8L22.7522 8.00231C23.5097 8.00231 24.2022 8.43025 24.541 9.10773L29.4355 18.8952C29.7742 19.5726 30.4707 20.0006 31.2283 20.0006C32.5865 20.0006 33.5585 18.6758 33.1395 17.3839L29.9542 7.56419C29.5477 6.31084 31.1778 5.42415 32.0094 6.44634L45.7758 23.3691C46.0747 23.7366 46.0747 24.2634 45.7758 24.6309L32.0094 41.5537C31.1778 42.5758 29.5477 41.6892 29.9542 40.4358L33.1395 30.6161C33.5585 29.3242 32.5865 27.9994 31.2283 27.9994C30.4707 27.9994 29.7742 28.4274 29.4355 29.1048L24.541 38.8923C24.2022 39.5697 23.5097 39.9977 22.7522 39.9977L3.00083 40Z" />
-				</svg>
-			<!-- </a>			 -->
+			{{ partial "header.html" . }}
 			<section>
 				<h1>Hi! I'm Tony Folenta. I build design systems.</h1>
 				<p class="intro">As a design manager for <a href="https://technology.kw.com" target="_blank">Keller Williams</a>, I lead product design and design systems development. Previously, I was a lead product designer for <a href="https://strava.com" target="_blank">Strava</a> in San Francisco, and I got my start as a visual designer for <a href="https://www.odopod.com" target="_blank">Odopod</a>, a product design agency.</p>
-				<div class="meta">
-					{{ range .Site.Menus.main }}
-					<a href="{{ .URL }}">{{ .Name }}</a> · 
-					{{ end }}
-					<a href="mailto:hi@tnflnt.co">Contact</a>
-				</div>
 			</section>
 			{{ partial "footer.html" . }}
 		</div>

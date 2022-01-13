@@ -305,10 +305,7 @@ hr {
 }
 
 blockquote {
-  font-family: var(--monoFont);
-  font-style: italic;
-  font-size: 0.75rem;
-  border-left: 4px solid var(--dividerColor);
+  border-left: 2px solid var(--dividerColor);
   color: var(--labelSecondary);
   margin: 2rem 0;
   padding-left: 1.5rem;
@@ -369,6 +366,7 @@ pre {
   color: var(--labelPrimary);
   padding: 1em;
   border-radius: 4px;
+  overflow-y: scroll;
 }
 
 pre code {

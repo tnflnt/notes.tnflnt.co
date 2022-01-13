@@ -49,7 +49,7 @@
   --actionColorActive:var(--indigo60);
   --actionColorFocus: hsla(250, 100%, 64%, 0.6);
   --dividerColor: var(--neutral80);
-  
+  --shadow: 0px 32px 96px rgba(0, 0, 0, 0.05), 0px 96px 128px -96px rgba(0, 0, 0, 0.15), 0px 48px 72px -48px rgba(0, 0, 0, 0.15), 0px 24px 48px -24px rgba(0, 0, 0, 0.15), 0px 24px 16px -16px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,6 +67,7 @@
     --actionColorActive:var(--magenta40);
     --actionColorFocus: hsla(320, 94%, 46%, 0.6);
     --dividerColor: var(--neutral40);
+    --shadow: 0px 32px 96px rgba(0, 0, 0, 0.15), 0px 96px 128px -96px rgba(0, 0, 0, 0.3), 0px 48px 72px -48px rgba(0, 0, 0, 0.3), 0px 24px 48px -24px rgba(0, 0, 0, 0.3), 0px 24px 16px -16px rgba(0, 0, 0, 0.3), 0px 1px 4px rgba(0, 0, 0, 0.3);
     
   }
 }
@@ -86,13 +87,6 @@ html, body {
   html, body {
     font-size: 16px;
   }
-}
-
-.home-content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 /* Selections */
@@ -468,6 +462,61 @@ justify-content: space-between;
   text-transform: uppercase;
 }
 
+/* Home */
+
+.home-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-section {
+  margin: 1rem 0;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.headshot {
+  background-color: var(--labelPrimary);
+  box-shadow: var(--shadow);
+  border-radius: 3px;
+  overflow: hidden;
+  display: block;
+  max-width: 8rem;
+  max-height: 8rem;
+  align-content: end;
+}
+
+@media screen and (min-width: 480px) {
+  .home-section {
+    margin: 2rem 0;
+  }
+  
+  .home-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .headshot {
+    background-color: var(--labelPrimary);
+    box-shadow: var(--shadow);
+    border-radius: 3px;
+    overflow: hidden;
+    display: block;
+    max-width: 12rem;
+    max-height: 12rem;
+  }
+}
 
 
 /* Case Study Styles */

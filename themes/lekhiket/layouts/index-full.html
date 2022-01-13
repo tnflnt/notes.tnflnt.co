@@ -21,12 +21,12 @@
 						<section class="body">
 							{{ .Content }}
 						</section>
-						<div class="meta"><a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>
+						<div class="meta-sm meta-light"><a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>
 					{{ else }}
 						<section class="body microblog">
 							{{ .Content }}
 						</section>
-						<div class="meta"><a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>
+						<div class="meta-sm meta-light"><a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</div>
 					{{ end }}
 					<hr>
 				</article>

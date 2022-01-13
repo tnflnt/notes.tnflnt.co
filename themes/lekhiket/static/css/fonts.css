@@ -1,71 +1,94 @@
 @font-face {
-  font-family: 'Greycliff';
-  src:  url('../fonts/GreycliffCF-Medium.woff2') format('woff2'),
-        url('../fonts/GreycliffCF-Medium.woff') format('woff');
-  font-weight: normal;
+  font-family: 'VCTR Mono';
+  src:  url('../fonts/VCTR-Mono-Regular.woff2') format('woff2');  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Greycliff';
-  src:  url('../fonts/GreycliffCF-MediumOblique.woff2') format('woff2'),
-        url('../fonts/GreycliffCF-MediumOblique.woff') format('woff');
+  font-family: 'VCTR Mono';
+  src:  url('../fonts/VCTR-Mono-Italic.woff2') format('woff2');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Greycliff';
-  src:  url('../fonts/GreycliffCF-Bold.woff2') format('woff2'),
-        url('../fonts/GreycliffCF-Bold.woff') format('woff');
+  font-family: 'VCTR Mono';
+  src:  url('../fonts/VCTR-Mono-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Greycliff';
-  src:  url('../fonts/GreycliffCF-BoldOblique.woff2') format('woff2'),
-        url('../fonts/GreycliffCF-BoldOblique.woff') format('woff');
+  font-family: 'VCTR Mono';
+  src:  url('../fonts/VCTR-Mono-BoldItalic.woff2') format('woff2');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Cartograph';
-  src:  url('../fonts/CartographCF-Regular.woff2') format('woff2'),
-        url('../fonts/CartographCF-Regular.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Concourse';
+  src:  url('../fonts/concourse_ot_3_book.woff2') format('woff2');  
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Cartograph';
-  src:  url('../fonts/CartographCF-RegularItalic.woff2') format('woff2'),
-        url('../fonts/CartographCF-RegularItalic.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Concourse';
+  src:  url('../fonts/concourse_ot_3_book_italic.woff2') format('woff2');
+  font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Cartograph';
-  src:  url('../fonts/CartographCF-ExtraBold.woff2') format('woff2'),
-        url('../fonts/CartographCF-ExtraBold.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Concourse';
+  src:  url('../fonts/concourse_ot_4_medium.woff2') format('woff2');  
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Cartograph';
-  src:  url('../fonts/CartographCF-ExtraBoldItalic.woff2') format('woff2'),
-        url('../fonts/CartographCF-ExtraBoldItalic.woff2') format('woff');
-  font-weight: bold;
+  font-family: 'Concourse';
+  src:  url('../fonts/concourse_ot_4_medium_italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Concourse';
+  src:  url('../fonts/concourse_ot_6_semibold.woff2') format('woff2');  
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Concourse';
+  src:  url('../fonts/concourse_ot_6_semibold_italic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Concourse';
+  src:  url('../fonts/concourse_ot_7_bold.woff2') format('woff2');  
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Concourse';
+  src:  url('../fonts/concourse_ot_7_bold_italic.woff2') format('woff2');
+  font-weight: 700;
   font-style: italic;
   font-display: swap;
 }

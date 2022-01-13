@@ -5,7 +5,6 @@
 	<h1 class="page-title">{{ .Title }}</h1>
 	{{ end }}
 	<p class="intro">{{ .Description }}</p>
-	<hr />
 	{{ range .Data.Pages }}
 	<section class="list-item">
 		{{ if (not (isset .Params "externalurl")) }}
@@ -15,10 +14,9 @@
 		{{ end }}
 		<p>{{ .Description }}</p>
 		<p><a title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">Read More →</a></p>
-		<div class="meta">
+		<div class="meta-sm meta-light">
 		{{ if .Draft }}<span class="draft-label">DRAFT</span> • {{ end }}<a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}
 		</div>
 	</section>
-	<hr />
 	{{ end }}
 {{ end }}

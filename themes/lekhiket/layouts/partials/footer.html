@@ -1,10 +1,13 @@
 <footer>
-      <div class="main">
-            Copyright &copy; {{ now.Format "2006"}} Tony Folenta
+      <hr />
+      <div class="nav-content">
+            <div class="main">
+                  <p class="meta-md meta-light color-secondary">Copyright &copy; {{ now.Format "2006"}} Tony Folenta</p>
+            </div>
+            <nav>
+                  {{ range .Site.Menus.footer }}
+                  <p class="meta-md"><a href="{{ .URL }}" class="nav-link">{{ .Name }}</a></p>
+                  {{ end }}
+            </nav>
       </div>
-      <nav>
-            {{ range .Site.Menus.footer }}
-            <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
-            {{ end }}
-      </nav>
 </footer>

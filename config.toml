@@ -14,28 +14,48 @@ title = "tnflnt.co"
 # Main Menu Items
 
 [[menu.main]]
-name = "Posts"
-url = "/posts"
-weight = 1
-
-# [[menu.main]]
-# name = "Work"
-# url = "/work"
-# weight = 2
-
-[[menu.main]]
 name = "About"
 url = "/About"
+weight = 1
+
+[[menu.main]]
+name = "Writing"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "Contact ↗"
+url = "mailto:hi@tnflnt.co"
 weight = 3
 
 # Footer Menu Items
 
 [[menu.footer]]
-name = "RSS 🗞"
-url = "/index.xml"
+name = "hi@tnflnt.co"
+url = "mailto:hi@tnflnt.co"
 weight = 1
 
 [[menu.footer]]
-name = "hi@tnflnt.co 📬"
-url = "mailto:hi@tnflnt.co"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/tnflnt/"
 weight = 2
+
+[[menu.footer]]
+name = "GitHub"
+url = "https://github.com/tnflnt"
+weight = 3
+
+[[menu.footer]]
+name = "Figma"
+url = "https://www.figma.com/@tnflnt"
+weight = 4
+
+[[menu.footer]]
+name = "RSS"
+url = "/index.xml"
+weight = 5
+
+[[menu.footer]]
+name = "Colophon"
+url = "/colophon"
+weight = 6

@@ -8,7 +8,7 @@
 				<h1 class="title"><a rel="remote-article" href="{{ .Params.externalurl }}" target="_blank" class="link-out">{{ .Title }}</a></h1>
 			{{ end }}
 		</div>
-		<div class="meta">
+		<div class="meta-md meta-light">
 			{{ if .Draft }}<span class="draft-label">DRAFT</span> • {{ end }}<a class="permalink" title="Permanent link to '{{ .Title }}'" href="{{ .Permalink }}">🔗</a> • {{ dateFormat "Jan 2, 2006" .Date }}
 		</div>
 		<section class="body">

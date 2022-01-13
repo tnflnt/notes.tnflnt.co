@@ -4,21 +4,51 @@
   
   /* Fonts */
   
-  --monoFont: 'Cartograph CF', 'Cartograph', monospace;
-  --sansFont: 'Greycliff CF', 'Greycliff', sans-serif;
+  --monoFont: 'VCTR Mono', monospace;
+  --sansFont: 'Concourse', var(--systemFont), sans-serif;
   --systemFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  
+  /* Global Colors */
+  
+  --neutral00: #000000;
+  --neutral05: #040405;
+  --neutral10: #100F11;
+  --neutral20: #242327;
+  --neutral30: #414046;
+  --neutral40: #64626A;
+  --neutral50: #7C7983;
+  --neutral60: #8F8E97;
+  --neutral70: #B5B3BC;
+  --neutral80: #D3D1D9;
+  --neutral90: #E9E8EE;
+  --neutral95: #F7F6FA;
+  --neutral100: #FFFFFF;
+  
+  --indigo30: #1A019A;
+  --indigo40: #2404C2;
+  --indigo50: #3C1AE5;
+  --indigo60: #6546FF;
+  --indigo70: #876EFF;
+  
+  --magenta30: #B7047B;
+  --magenta40: #E3079A;
+  --magenta50: #FF22B5;
+  --magenta60: #FF57C7;
+  --magenta70: #FF8CD9;
+  
   
   /* Light Theme */
   
-  --pageBackground: #FFFFFF;
-  --labelPrimary: #000000;
-  --labelSecondary: #000000;
-  --labelTertiary: #666666;
-  --actionColor: #5025EE;
-  --actionColorHover:#2E15BB;
-  --actionColorActive:#7550FF;
-  --actionColorFocus: rgba(80, 37, 238, 0.6);
-  --dividerColor: #EEEEEE;
+  --pageBackground: var(--neutral95);
+  --backgroundHi: var(--neutral100);
+  --backgroundLo: var(--neutral90);
+  --labelPrimary: var(--neutral20);
+  --labelSecondary: var(--neutral40);
+  --actionColor: var(--indigo50);
+  --actionColorHover:var(--indigo40);
+  --actionColorActive:var(--indigo60);
+  --actionColorFocus: hsla(250, 100%, 64%, 0.6);
+  --dividerColor: var(--neutral20);
   
 }
 
@@ -27,15 +57,16 @@
     
     /* Dark Theme */
     
-    --pageBackground: #111111;
-    --labelPrimary: #FFFFFF;
-    --labelSecondary: #CCCCCC;
-    --labelTertiary: #999999;
-    --actionColor: #FF50FF;
-    --actionColorHover: #FF90FF;
-    --actionColorActive: #E300E3;
-    --actionColorFocus: rgba(255, 80, 255, 0.6);
-    --dividerColor: #333333;
+    --pageBackground: var(--neutral05);
+    --backgroundHi: var(--neutral30);
+    --backgroundLo: var(--neutral00);
+    --labelPrimary: var(--neutral90);
+    --labelSecondary: var(--neutral70);
+    --actionColor: var(--magenta50);
+    --actionColorHover:var(--magenta60);
+    --actionColorActive:var(--magenta40);
+    --actionColorFocus: hsla(320, 94%, 46%, 0.6);
+    --dividerColor: var(--neutral90);
     
   }
 }
@@ -46,7 +77,7 @@ html, body {
   font-size: 16px;
   font-family: var(--sansFont);
   line-height: 1.6;
-  color: var(--labelSecondary);
+  color: var(--labelPrimary);
   background-color: var(--pageBackground);
   height: 100%;
 }
@@ -62,11 +93,6 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.logo-icon {
-  margin-top: 4rem;
-  fill: var(--actionColor);
 }
 
 /* Selections */
@@ -85,61 +111,118 @@ html, body {
 
 /* Typography */
 
-p {
-  line-height: 1.75;
-}
-
-.intro {
-  font-size: 1.4rem;
-}
-
 h1 {
-  font-size: 2rem;
+  font-family: var(--sansFont);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-family: var(--sansFont);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-family: var(--sansFont);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
 }
 
-h4 {
-  font-size: 1.125rem;
-}
-
-h5 {
+h4, .meta-lg {
   font-family: var(--monoFont);
-  letter-spacing: 0.1em;
-  font-size: 1rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;  
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  margin: 0;
 }
 
-h6 {
+h5, .meta-md {
   font-family: var(--monoFont);
-  letter-spacing: 0.1em;
-  font-size: 1rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;  
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-style: italic;
+  margin: 0;
+}
+
+h6, .meta-sm {
+  font-family: var(--monoFont);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.meta-light {
+  font-weight: normal;
+}
+
+.body-lg, .intro {
+  font-family: var(--sansFont);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+p, .body-md {
+  font-family: var(--sansFont);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.body-sm {
+  font-family: var(--sansFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Color Utilities */
+
+.color-primary {
+  color: var(--labelPrimary);
+}
+
+.color-secondary {
+  color: var(--labelSecondary);
+}
+
+.color-action {
+  color: var(--actionColor);
 }
 
 /* Links */
 
 a  {
-  color: var(--actionColor);
-  border-bottom: 2px solid var(--dividerColor);
-  font-weight: bold;
+  color: var(--labelPrimary);
+  font-weight: 600;
   text-decoration: none;
-  transition-property: color, border-bottom, background-color;
+  transition-property: color;
   transition-duration: 200ms;
   transition-timing-function: ease;
 }
 
 a:hover {
-  color: var(--pageBackground) !important;
-  border-bottom: 2px solid var(--actionColorHover);
-  background-color: var(--actionColorHover);
+  color: var(--actionColorHover) !important;
 }
 
 a:focus {
@@ -148,9 +231,7 @@ a:focus {
 }
 
 a:active {
-  color: var(--pageBackground) !important;
-  border-bottom: 2px solid var(--actionColorActive);
-  background-color: var(--actionColorActive);
+  color: var(--actionColorActive) !important;
 }
 
 a:focus {
@@ -161,7 +242,7 @@ a:focus {
 
 a.nav-link {
   color: var(--labelPrimary);
-  border-bottom: none;
+  border-bottom-color: var(--pageBackground);
 }
 
 a.permalink {
@@ -176,10 +257,9 @@ a.link-out::after {
 /* Containers */
 
 .content {
-  margin-bottom: 4em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 40rem;
+  max-width: 32rem;
   padding: 0 1.5rem;
   word-wrap: break-word;
 }
@@ -188,8 +268,11 @@ a.link-out::after {
 
 hr {
   border: 0;
-  border-top: 4px solid var(--dividerColor);
+  border-radius: 0.5px;
   margin: 1em 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--dividerColor);
 }
 
 blockquote {
@@ -235,11 +318,9 @@ figure {
 }
 
 figure figcaption {
-  font-family: var(--monoFont);
-  font-style: italic;
   font-size: 0.75rem;
   text-align: center;
-  max-width: 28rem;
+  max-width: 32rem;
   margin: 0 auto;
 }
 
@@ -273,43 +354,33 @@ pre code {
 header, footer, .pagination {
   font-family: var(--monoFont);
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 1.5rem 0;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  align-items: start;
 }
 
 header {
-  font-size: 1.25rem;
+  margin-top: 1rem;
 }
 
 footer {
-  font-size: 0.75rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 header nav, footer nav {
   display: flex;
-  gap: 0.5rem;
-}
-
-header a, footer a {
-  /* color: var(--labelPrimary); */
-  border-bottom: none !important;
-  padding: 0.125rem 0.25rem;
-  border-radius: 2px;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 /* Meta */
-
-.meta {
-  font-family: var(--monoFont);
-  letter-spacing: 0.1em;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  color: var(--labelTertiary);
-}
 
 .draft-label { 
   font-family: var(--monoFont);

@@ -2,8 +2,8 @@
 <main>
 	<div class="title">
 		<h1 class="work-title">{{ .Title }}</h1>
-		<h3 class="work-year">{{ .Params.year }}{{ if .Draft }} • <span class="draft-label">DRAFT</span> {{ end }}</h3>
-		<h4 class="work-meta">{{ .Params.timeline }} • {{ .Params.role }}</h4>
+		<h4 class="work-meta">{{ .Params.year }} • {{ .Params.timeline }} • {{ .Params.role }}</h4>
+		{{ if .Draft }}<h4 class="work-meta"><span class="draft-label">DRAFT</span></h4>{{ end }}
 	</div>
 	<hr />
 	<section class="body">

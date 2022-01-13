@@ -24,7 +24,7 @@ url = "/posts"
 weight = 2
 
 [[menu.main]]
-name = "Contact ↗"
+name = "Contact"
 url = "mailto:hi@tnflnt.co"
 weight = 3
 

@@ -11,17 +11,17 @@
   /* Global Colors */
   
   --neutral00: #000000;
-  --neutral05: #040405;
-  --neutral10: #100F11;
-  --neutral20: #242327;
-  --neutral30: #414046;
-  --neutral40: #64626A;
-  --neutral50: #7C7983;
-  --neutral60: #8F8E97;
-  --neutral70: #B5B3BC;
-  --neutral80: #D3D1D9;
-  --neutral90: #E9E8EE;
-  --neutral95: #F7F6FA;
+  --neutral05: #040404;
+  --neutral10: #101010;
+  --neutral20: #252525;
+  --neutral30: #434343;
+  --neutral40: #666666;
+  --neutral50: #7d7d7d;
+  --neutral60: #929292;
+  --neutral70: #b7b7b7;
+  --neutral80: #d4d4d4;
+  --neutral90: #ebebeb;
+  --neutral95: #f6f6f6;
   --neutral100: #FFFFFF;
   
   --indigo30: #1A019A;
@@ -48,7 +48,7 @@
   --actionColorHover:var(--indigo40);
   --actionColorActive:var(--indigo60);
   --actionColorFocus: hsla(250, 100%, 64%, 0.6);
-  --dividerColor: var(--neutral20);
+  --dividerColor: var(--neutral80);
   
 }
 
@@ -66,7 +66,7 @@
     --actionColorHover:var(--magenta60);
     --actionColorActive:var(--magenta40);
     --actionColorFocus: hsla(320, 94%, 46%, 0.6);
-    --dividerColor: var(--neutral90);
+    --dividerColor: var(--neutral40);
     
   }
 }
@@ -135,7 +135,17 @@ h3 {
   line-height: 32px;
 }
 
-h4, .meta-lg {
+h4 {
+  font-family: var(--monoFont);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;  
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.meta-lg {
   font-family: var(--monoFont);
   font-style: normal;
   font-weight: bold;
@@ -146,7 +156,17 @@ h4, .meta-lg {
   margin: 0;
 }
 
-h5, .meta-md {
+h5 {
+  font-family: var(--monoFont);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;  
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.meta-md {
   font-family: var(--monoFont);
   font-style: normal;
   font-weight: bold;
@@ -157,7 +177,17 @@ h5, .meta-md {
   margin: 0;
 }
 
-h6, .meta-sm {
+h6 {
+  font-family: var(--monoFont);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.meta-sm {
   font-family: var(--monoFont);
   font-style: normal;
   font-weight: 900;
@@ -186,6 +216,10 @@ p, .body-md {
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
+}
+
+p strong {
+  font-weight: 600;
 }
 
 .body-sm {
@@ -239,11 +273,6 @@ a:focus {
 }
 
 /* Component Link Styles */
-
-a.nav-link {
-  color: var(--labelPrimary);
-  border-bottom-color: var(--pageBackground);
-}
 
 a.permalink {
   border-bottom: none;
@@ -328,7 +357,7 @@ figure figcaption {
 
 code {
   font-family: var(--monoFont);
-  background-color: var(--dividerColor);
+  background-color: var(--backgroundLo);
   color: var(--labelPrimary);
   padding: .1em .2em;
   border-radius: 2px;
@@ -336,7 +365,7 @@ code {
 
 pre {
   font-family: var(--monoFont);
-  background-color: var(--dividerColor);
+  background-color: var(--backgroundLo);
   color: var(--labelPrimary);
   padding: 1em;
   border-radius: 4px;
@@ -374,6 +403,13 @@ footer {
   width: 100%;
 }
 
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  width: 176px;
+  justify-content: space-between;
+}
+
 header nav, footer nav {
   display: flex;
   flex-direction: column;
@@ -385,12 +421,12 @@ header nav, footer nav {
 .draft-label { 
   font-family: var(--monoFont);
   letter-spacing: 0.1em;
-  color: var(--labelTertiary);
+  color: var(--labelSecondary);
   text-decoration: none;
   padding: 2px 4px;
   border-radius: 4px;
   margin-left: 6px;
-  background-color: var(--dividerColor);
+  background-color: var(--backgroundLo);
 }
 
 .site-description {
@@ -428,7 +464,7 @@ justify-content: space-between;
 .work-year {
   font-family: var(--monoFont);
   letter-spacing: 0.1em;
-  color: var(--labelTertiary);
+  color: var(--labelSecondary);
   font-size: 1rem;
   text-align: center;
 }
@@ -436,7 +472,7 @@ justify-content: space-between;
 .work-meta {
   font-family: var(--monoFont);
   letter-spacing: 0.1em;
-  color: var(--labelTertiary);
+  color: var(--labelSecondary);
   font-size: 0.75rem;
   text-align: center;
   text-transform: uppercase;

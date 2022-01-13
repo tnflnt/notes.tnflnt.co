@@ -6,7 +6,7 @@
             </div>
             <nav>
                   {{ range .Site.Menus.footer }}
-                  <p class="meta-md"><a href="{{ .URL }}" class="nav-link">{{ .Name }}</a></p>
+                  <a href="{{ .URL }}" class="nav-link meta-md"><span>{{ .Name }}</span><span aria-hidden="true">→</span></a>
                   {{ end }}
             </nav>
       </div>
